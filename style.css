@@ -1,4 +1,4 @@
-*{
+*{  background:#F2F4CE;
     padding: 0;
     margin: 0;
 }
@@ -29,10 +29,26 @@ input [type="number"]::-webkit-inner-spin-button {
 }
 
 
+
 h2{
     font-size: 90pt;
 }
 
 #timer{
     display:none !important;
+    
+}
+
+#sessoes, #pausa, #acao {
+    background-color: #D03C3C; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto (branco) */
+    border: 2px solid #9B2C2C; /* Cor da borda vermelha escura */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+}
+
+#body1{
+    background-color:#F2F4CE;
+    color: #F2F4CE;
+
 }

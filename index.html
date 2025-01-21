@@ -21,7 +21,7 @@
     <title>Timer Pomodoro</title>
 </head>
 
-<body class="bg-dark">
+<body id="body1">
 
     <!--Menu-->
     <nav class="navbar navbar-expand-lg navbar-light bg-danger">
@@ -29,10 +29,10 @@
 
         <div class="ml-auto">
             <a onclick="pausar()">
-                <i id='pause' class ="fa fa-pause-circle text-white" style="font-size: 25pt; display: none;" aria-hidden="true"></i>
+                <i id='pause' class ="fa fa-pause-circle text-white bg-danger" style="font-size: 25pt; display: none;" aria-hidden="true"></i>
             </a>
             <a onclick="executar()">
-                <i id = 'play' class="fa fa-play text-white" style="font-size: 25pt; display: none;" aria-hidden="true"></i>
+                <i id = 'play' class="fa fa-play text-white bg-danger" style="font-size: 25pt; display: none;" aria-hidden="true"></i>
             </a>
 
             <audio id= 'lofi' src="./audio/lo-fi.mp3" type="audio/mpeg"></audio>
@@ -61,10 +61,10 @@
 
                             <div class="col-md-3 d-flex justify-content-center">
                                 <div class="form-group">
-                                    <label class="d-flex justify-content-center text-white font-weight-bold"
+                                    <label class="d-flex justify-content-center font-weight-bold" style="color: #D03C3C;"
                                         for="acao">Ação</label>
                                     <input type="number"
-                                        class="form-control form-control-lg bg-dark border-0 shadow text-white"
+                                        class="form-control form-control-lg border-0 shadow text-white"
                                         id="acao">
                                         <small class="text-danger" id='erro_acao'></small>
                                 </div>
@@ -72,10 +72,10 @@
 
                             <div class="col-md-3 d-flex justify-content-center">
                                 <div class="form-group">
-                                    <label class="d-flex justify-content-center text-white font-weight-bold"
+                                    <label class="d-flex justify-content-center font-weight-bold" style="color: #D03C3C;"
                                         for="pausa">Pausa</label>
                                     <input type="number"
-                                        class="form-control form-control-lg bg-dark border-0 shadow text-white"
+                                        class="form-control form-control-lg border-0 shadow text-white"
                                         id="pausa">
                                         <small class="text-danger" id='erro_pausa'></small>
                                 </div>
@@ -83,10 +83,10 @@
 
                             <div class="col-md-3 d-flex justify-content-center">
                                 <div class="form-group">
-                                    <label class="d-flex justify-content-center text-white font-weight-bold"
+                                    <label class="d-flex justify-content-center font-weight-bold" style="color: #D03C3C;"
                                         for="sessoes">Sessões</label>
                                     <input type="number"
-                                        class="form-control form-control-lg bg-dark border-0 shadow text-white"
+                                        class="form-control form-control-lg border-0 shadow text-white"
                                         id="sessoes">
                                         <small class="text-danger" id='erro_sessoes'></small>
                                 </div>
@@ -99,7 +99,7 @@
 
                          <div class="row mt-5 mb-5 d-flex justify-content-center">
                             <div class="col-md-9">
-                                <button onclick="iniciar()" class= "btn btn-danger shadow btn-lg btn-block">Iniciar</button>
+                                <button onclick="iniciar()" class= "btn shadow btn-lg btn-block " style="background-color: #69B44E; color: rgb(241, 217, 201);">Iniciar</button>
                             </div>
 
                         </div>
@@ -130,15 +130,15 @@
             <div class="row shadow time">
 
                 <div class="col-5 p-0 ">
-                    <h2 id="minutes_ok"></h2>
+                    <h2 style="color: #69B44E;" id="minutes_ok"></h2>
                 </div>
 
                 <div class="col-1 p-0 d-flex justify-content-center">
-                    <h2>:</h2>
+                    <h2 style="color: #69B44E;">:</h2>
                 </div>
 
                 <div class="col-5 pl-0">
-                    <h2 id ="seconds_ok"></h2>
+                    <h2 style="color: #69B44E;" id ="seconds_ok"></h2>
                 </div>
             </div>
             <!--/Relógio-->
@@ -157,7 +157,7 @@
 
         <!--Finalização--> 
         <div id="fim" style="display: none;">
-            <h1 class ="text-sucess text-center">Parabéns! Você finalizou suas tarefas.</h1>
+            <h1 class ="text-sucess text-center" style="color: #D03C3C;">Parabéns! Você finalizou suas tarefas.</h1>
             <div class="row mt-5 mb-5 d-flex justify-content-center">
                 <div class="col-md-9 d-flex justify-content-center">
                     <a href="./index.html" class="btn btn-danger shadow btn-lg">Inicio</a>

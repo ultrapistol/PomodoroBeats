@@ -43,7 +43,7 @@ h2{
     background-color: #D03C3C; /* Cor de fundo vermelha */
     color: white; /* Cor do texto (branco) */
     border: 2px solid #9B2C2C; /* Cor da borda vermelha escura */
-    border-radius: 5px; /* Bordas arredondadas */
+    border-radius: 55px; /* Bordas arredondadas */
     padding: 10px; /* Espaçamento interno */
 }
 
@@ -51,4 +51,9 @@ h2{
     background-color:#F2F4CE;
     color: #F2F4CE;
 
+}
+
+#input1{
+    border-radius: 50%; 
+    
 }

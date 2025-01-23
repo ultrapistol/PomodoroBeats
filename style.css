@@ -3,6 +3,9 @@
     margin: 0;
 }
 
+
+@import url('https://fonts.google.com/specimen/Sono');
+
 input{
     width: 150px !important;
     height: 150px !important;
@@ -50,7 +53,7 @@ h2{
 #body1{
     background-color:#F2F4CE;
     color: #F2F4CE;
-
+    font-family: 'Sono';
 }
 
 #input1{

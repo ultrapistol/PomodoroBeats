@@ -14,6 +14,7 @@
 
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap">
 
     <!-- Ícone -->
     <link rel="icon" href="./img/logo.png.png" type="image/png">
@@ -26,17 +27,17 @@
 
     <!--Menu-->
     <nav class="navbar navbar-expand-lg navbar-light"  style="background-color: #D03C3C;">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="LandindPage.html">
             <img src="img/PomodoroHeader.png" width="160" height="28" class="d-inline-block align-top" alt="" style="background-color: #D03C3C;">
 
         </a>
 
         <div class="ml-auto">
             <a onclick="pausar()">
-                <i id='pause' class ="fa fa-pause-circle text-white bg-danger" style="font-size: 25pt; display: none;" aria-hidden="true"></i>
+                <i id='pause' class ="fa fa-pause-circle text-white" style="font-size: 25pt; display: none;  background-color: #D03C3C;" aria-hidden="true"></i>
             </a>
             <a onclick="executar()">
-                <i id = 'play' class="fa fa-play text-white bg-danger" style="font-size: 25pt; display: none;" aria-hidden="true"></i>
+                <i id = 'play' class="fa fa-play text-white" style="font-size: 25pt; display: none; background-color: #D03C3C;" aria-hidden="true"></i>
             </a>
 
             <audio id= 'lofi' src="./audio/lo-fi.mp3" type="audio/mpeg"></audio>
@@ -68,7 +69,7 @@
                                     <label class ="d-flex justify-content-center font-weight-bold" style="color: #69B44E;" 
                                         for="acao">Ação</label>
                                     <input type="number"
-                                        class="form-control form-control-lg border-0 shadow text-white"
+                                        class="form-control form-control-lg justify-content-center border-0 shadow text-white"
                                         id="acao">
                                         <small class="text-danger" id='erro_acao'></small>
                                 </div>
@@ -79,7 +80,7 @@
                                     <label class="d-flex justify-content-center font-weight-bold" style="color: #69B44E;"
                                         for="pausa">Pausa</label>
                                     <input type="number"
-                                        class="form-control form-control-lg border-0 shadow text-white"
+                                        class="form-control form-control-lg justify-content-center border-0 shadow text-white"
                                         id="pausa">
                                         <small class="text-danger" id='erro_pausa'></small>
                                 </div>
@@ -90,7 +91,7 @@
                                     <label class="d-flex justify-content-center font-weight-bold" style="color: #69B44E;"
                                         for="sessoes">Sessões</label>
                                     <input type="number"
-                                        class="form-control form-control-lg border-0 shadow text-white"
+                                        class="form-control form-control-lg justify-content-center border-0 shadow text-white"
                                         id="sessoes">
                                         <small class="text-danger" id='erro_sessoes'></small>
                                 </div>
